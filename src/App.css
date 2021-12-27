@@ -1,0 +1,85 @@
+body{
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+:root {
+  --headerBackground: #61dafb;
+  --font: #282c34;
+}
+@font-face {
+  font-family: "Angeles";
+  src: local("Angeles"), url("./Angeles.ttf") format("truetype");
+}
+.App-header {
+  background-color: var(--font);
+  color: var(--headerBackground);
+  height: auto;
+  width: auto;
+  font-family: "Angeles";
+  font-size: x-large;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+.App-header h1,
+h2 {
+  margin: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.App-header img {
+  float: right;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.meno {
+  position: fixed;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  background-color: #030c25;
+  width: min(100%, 200px);
+  left: 0;
+  top: 140px;
+  bottom: 0;
+}
+.meno button {
+  width: 200px;
+  background-color: #030c25;
+  color: var(--headerBackground);
+  border: none;
+  height: 50px;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.meno button:hover{
+  background-color: #1d2431;
+}
+@media screen and (max-width: 800px) {
+  .App-header {
+  font-size: small;
+  position: sticky;
+  }
+  .App-header img {
+    width: 50px ;
+    height: 50px;
+  }
+  .meno{
+    position: relative;
+    float: none;
+    width: 100%;
+  }
+  .meno button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .App-header {
+    font-size: xx-small;
+  }
+}

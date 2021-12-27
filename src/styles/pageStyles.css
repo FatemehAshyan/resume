@@ -1,0 +1,31 @@
+.page {
+  font-family: "sense serif";
+  margin: 20px 20px 20px 220px;
+  color: #030c25;
+}
+
+.page img {
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+.page p {
+  margin-left: 30px;
+}
+.page h2 {
+  color: #04296e;
+}
+.page a, h3{
+  color: #062862;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .page {
+    margin: 20px 20px 20px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .page {
+    font-size: small;
+  }
+}
